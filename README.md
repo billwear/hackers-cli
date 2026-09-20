@@ -1,7 +1,32 @@
 # hackers-cli
 Expanded versions of basic Unix command-line utilities. Each of the normally pedestrian CLI tools is extended to provide more convenience and capability.
 
-## Licensing
+## hls: The Systems Programmer's Directory Visualizer
+
+`hls` is a modern, systems-level directory browser built for text-as-data workflows and Unix-first environments. Designed to eliminate the friction of piping output through `awk`, `grep`, or `stat`, `hls` brings kernel-level filesystem telemetry, Git awareness, and structured JSON rendering directly into your initial directory interrogation.
+
+### Why hls?
+
+Where standard utilities require chaining multiple shell tools to audit low-level file states, `hls` interrogates the `stat` struct natively. 
+* **Toolchain Ready:** Emit strictly typed JSON arrays (`-j`) and apply internal POSIX regex filters (`-E`) to bypass fragile text parsing.
+* **Deep Inspection:** Sniff actual magic bytes (`-M`), enumerate extended attributes (`-@`), and view raw octal permissions (`-O`) alongside standard output.
+* **Context Aware:** Asynchronously queries Git working trees to prepend status badges (`-G`) and safely traverses directories into cycle-proof tree graphs (`-T`).
+
+### Building from Source
+
+`hls` is a standalone C program with no external dependencies beyond standard POSIX headers.
+
+```bash
+#### Compile with GCC or Clang
+gcc -O2 -Wall -Wextra -o hls hls.c
+
+#### Install to your local path
+sudo cp hls /usr/local/bin/
+sudo cp hls.1 /usr/local/share/man/man1/
+
+---
+
+# Licensing
 This project is authored by Bill Wear and is dual-licensed under the GNU Affero General Public License v3.0 (AGPLv3) and a Commercial License.
 
 ### Open Source / Community Use
