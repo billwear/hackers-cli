@@ -17,12 +17,13 @@ Where standard utilities require chaining multiple shell tools to audit low-leve
 `hls` is a standalone C program with no external dependencies beyond standard POSIX headers.
 
 ```bash
-#### Compile with GCC or Clang
+# Compile with GCC or Clang
 gcc -O2 -Wall -Wextra -o hls hls.c
 
-#### Install to your local path
+# Install to your local path
 sudo cp hls /usr/local/bin/
 sudo cp hls.1 /usr/local/share/man/man1/
+```
 
 ---
 
