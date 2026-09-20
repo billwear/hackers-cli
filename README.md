@@ -38,4 +38,4 @@ Because the AGPLv3 is a strong copyleft license, this freedom comes with a stric
 ### Commercial / Proprietary Use
 If you intend to integrate this software into a proprietary, closed-source commercial product, or if your organization's legal policies prohibit the use of AGPLv3-licensed software, you must acquire a separate Commercial License. This commercial agreement grants you the right to use, modify, and distribute the software in a production environment without the obligation to open-source your own proprietary derivative works.
 
-For commercial licensing inquiries, please [e-mail me](mailto:wowear@gmail.com?subject=Commercial%20Use%20of%hackers-cli).
+For commercial licensing inquiries, please [e-mail me](mailto:wowear@gmail.com?subject=Commercial%20Use%20of%20hackers-cli).
